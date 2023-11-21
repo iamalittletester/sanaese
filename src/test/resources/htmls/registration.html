@@ -51,28 +51,28 @@
     </iframe>
 
     <script>
-function postYourAdd () {
-    var iframe = $("#successFrame");
-    iframe.attr("src", iframe.data("src"));
-}
+        function postYourAdd () {
+            var iframe = $("#successFrame");
+            iframe.attr("src", iframe.data("src"));
+        }
 
 
     </script>
 </form>
 
 <script>
-var app = angular.module('registration', []);
-app.controller('validateCtrl', function($scope) {
-     $scope.countries = {
-            'Spain': ['Malaga','Madrid','Valencia','Corralejo'],
-            'Estonia': ['Tallinn', 'Haapsalu', 'Tartu'],
-            'Austria': ['Vienna', 'Salzburg', 'Innsbruck']
-          };
+    var app = angular.module('registration', []);
+    app.controller('validateCtrl', function($scope) {
+         $scope.countries = {
+                'Spain': ['Malaga','Madrid','Valencia','Corralejo'],
+                'Estonia': ['Tallinn', 'Haapsalu', 'Tartu'],
+                'Austria': ['Vienna', 'Salzburg', 'Innsbruck']
+              };
 
-          $scope.getSelectedCountry = function() {
-            $scope.strCountry = $scope.countrySrc;
-          };
-});
+              $scope.getSelectedCountry = function() {
+                $scope.strCountry = $scope.countrySrc;
+              };
+    });
 
 
 </script>

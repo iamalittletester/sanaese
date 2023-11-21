@@ -11,29 +11,29 @@
 <p id="userClicked"></p>
 
 <script>
-function alertFunction() {
-  alert("This is the alert box");
-}
-function confirmFunction() {
-  var confirmBoolean = confirm("Confirm modal");
-  if (confirmBoolean == true) {
-    document.getElementById("userClicked").innerHTML = "OK";
-  } else {
-    document.getElementById("userClicked").innerHTML = "Cancel";
-  }
-   txt;
-}
-function promptFunction() {
-  var promptOption = prompt("Type something");
-  if (promptOption != null) {
-    document.getElementById("userClicked").innerHTML =
-    "OK";
-  }
-  else {
-  document.getElementById("userClicked").innerHTML =
-    "Cancel";
-  }
-}
+    function alertFunction() {
+      alert("This is the alert box");
+    }
+    function confirmFunction() {
+      var confirmBoolean = confirm("Confirm modal");
+      if (confirmBoolean == true) {
+        document.getElementById("userClicked").innerHTML = "OK";
+      } else {
+        document.getElementById("userClicked").innerHTML = "Cancel";
+      }
+       txt;
+    }
+    function promptFunction() {
+      var promptOption = prompt("Type something");
+      if (promptOption != null) {
+        document.getElementById("userClicked").innerHTML =
+        "OK";
+      }
+      else {
+      document.getElementById("userClicked").innerHTML =
+        "Cancel";
+      }
+    }
 </script>
 
 </body>

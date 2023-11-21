@@ -3,19 +3,19 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 <script>
-var app = angular.module("myShoppingList", []);
-app.controller("myCtrl", function($scope) {
-    $scope.clickButton = function () {
-            $scope.successtext = "Success!";
-    }
+    var app = angular.module("myShoppingList", []);
+    app.controller("myCtrl", function($scope) {
+        $scope.clickButton = function () {
+                $scope.successtext = "Success!";
+        }
 
-});
+    });
 
 </script>
 
 <head>
     <style>
-h2   {color: yellow}
+        h2   {color: yellow}
 
     </style>
 </head>
@@ -28,7 +28,7 @@ h2   {color: yellow}
 </header>
 <div ng-app="myShoppingList" ng-cloak ng-controller="myCtrl" class="w3-card-4 w3-margin w3-padding-small w3-left">
     <h3>click()</h3>
-    <input type="checkbox" name="checkboxToClick">A checkbox<br>
+    <input type="checkbox" name="checkboxToClick" checked>A checkbox<br>
     <input type="radio" id="radioButtonToClick">The radio button
     <button id="buttonToClick" ng-click="clickButton()" class="w3-btn w3-padding w3-teal">Button</button>
     <p class="successMessage w3-text-green">{{successtext}}</p>
@@ -39,10 +39,10 @@ h2   {color: yellow}
     <input type="text">
     <textarea maxlength="200" placeholder="12345"></textarea>
 </div>
-<div class="w3-card-4 w3-margin w3-padding-small w3-left" >
+<div class="w3-card-4 w3-margin w3-padding-small w3-left">
     <div id="getTextOuterDiv">
         <h3>getText()</h3>
-        <div id="getTextInnerDiv" class="w3-card-4 w3-margin w3-padding-small" >
+        <div id="getTextInnerDiv" class="w3-card-4 w3-margin w3-padding-small">
             <img id="getTextImage" src="https://farm2.staticflickr.com/1854/42514697560_1740d1993f_n.jpg"
                  width="100"
                  height="100"
